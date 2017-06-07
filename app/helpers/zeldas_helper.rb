@@ -1,0 +1,2 @@
+module ZeldasHelper
+end
