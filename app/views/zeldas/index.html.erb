@@ -1,6 +1,6 @@
 <h1>Games</h1>
 
 <% @zeldas.each do |zelda| %>
-  <h2><a href="/zeldas/<%= zelda["id"] %>"><%= zelda["game"] %></a></h2>
+  <h2><a href="/zeldas/<%= zelda.id %>"><%= zelda.game %></a></h2>
   <br>
 <% end %>

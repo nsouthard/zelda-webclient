@@ -1,4 +1,8 @@
 <%= link_to "Home", "/" %>
 
-<h1><%= @zelda["game"] %></h1>
-<h2><%= @zelda["character"] %></h2>
+<h1>Game: <%= @zelda.game %></h1>
+<h2>Chacter: <%= @zelda.character %></h2>
+<h2><%= @zelda.character_id %></h2>
+
+<%= link_to "edit", "/zeldas/#{@zelda.id}/edit" %>
+<%= link_to "delete", "/zeldas/#{@zelda.id}", method: :delete %>
